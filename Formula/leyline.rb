@@ -1,9 +1,9 @@
 class Leyline < Formula
   desc "Native macOS window manager with per-Space controls"
   homepage "https://github.com/scshafe/leyline-wm"
-  url "https://github.com/scshafe/leyline-wm/releases/download/v1.0.0/leyline-1.0.0-source.tar.gz"
-  sha256 "072162abda56a22a9ab2609cca337dd6be79ba0bc6803997880e725ee8766c15"
-  version "1.0.0"
+  url "https://github.com/scshafe/leyline-wm/releases/download/v1.0.1/leyline-1.0.1-source.tar.gz"
+  sha256 "d6e2000363e9594d2c0ff734028b0d232ad2ea965b37758045810ab5808fad84"
+  version "1.0.1"
   license "MIT"
   depends_on macos: :sonoma
   depends_on "jq"
@@ -28,6 +28,6 @@ class Leyline < Formula
   end
 
   test do
-    assert_match "1.0.0", shell_output("#{bin}/ley --version")
+    assert_match "1.0.1", shell_output("#{bin}/ley --version")
   end
 end
